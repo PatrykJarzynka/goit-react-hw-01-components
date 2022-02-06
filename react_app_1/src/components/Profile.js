@@ -37,6 +37,8 @@ function Profile(props) {
             width: '100%',
             margin: 0,
             backgroundColor: 'rgb(240, 240, 240)',
+            borderBottomRightRadius: 5,
+            borderBottomLeftRadius: 5,
           },
           ul: {
             listStyle: 'none',
