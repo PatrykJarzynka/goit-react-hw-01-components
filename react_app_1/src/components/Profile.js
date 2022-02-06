@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { Global, css } from '@emotion/react';
+import { Global } from '@emotion/react';
 
 function Profile(props) {
   return (
@@ -33,8 +33,10 @@ function Profile(props) {
             border: 0,
             borderTop: 1,
             borderStyle: 'solid',
+            borderColor: 'rgb(227, 227, 227)',
             width: '100%',
             margin: 0,
+            backgroundColor: 'rgb(240, 240, 240)',
           },
           ul: {
             listStyle: 'none',
@@ -51,6 +53,7 @@ function Profile(props) {
             borderRight: 1,
             borderLeft: 1,
             borderStyle: 'solid',
+            borderColor: 'rgb(227, 227, 227)',
           },
           '.profile': {
             display: 'flex',
@@ -59,6 +62,8 @@ function Profile(props) {
             boxShadow: '-1px 3px 20px -11px rgba(66, 68, 90, 1);',
             width: 300,
             borderRadius: 5,
+            marginLeft: 'auto',
+            marginRight: 'auto',
           },
           '.label': {
             fontSize: 13,
@@ -67,7 +72,6 @@ function Profile(props) {
             fontSize: 16,
             fontWeight: 700,
           },
-          '.description': {},
         }}
       />
       <div className="profile">
