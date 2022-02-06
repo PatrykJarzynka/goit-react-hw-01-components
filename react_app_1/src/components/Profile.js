@@ -9,6 +9,7 @@ function Profile(props) {
           '.avatar': {
             width: 100,
             borderRadius: 50,
+            marginTop: 30,
           },
           '.name': {
             fontSize: 18,
@@ -17,15 +18,56 @@ function Profile(props) {
           },
           '.tag': {
             color: 'rgb(145, 146, 156)',
-            fontSize: 15,
+            fontSize: 14,
             marginTop: 0,
             marginBottom: 8,
           },
           '.location': {
-            fontSize: 16,
+            fontSize: 15,
             color: 'rgb(145, 146, 156)',
             marginTop: 0,
           },
+          '.stats': {
+            display: 'flex',
+            paddingLeft: 0,
+            border: 0,
+            borderTop: 1,
+            borderStyle: 'solid',
+            width: '100%',
+            margin: 0,
+          },
+          ul: {
+            listStyle: 'none',
+          },
+          li: {
+            display: 'flex',
+            flexDirection: 'column',
+            flexGrow: 1,
+            paddingTop: 15,
+            paddingBottom: 15,
+          },
+          'li: nth-child(2)': {
+            border: 0,
+            borderRight: 1,
+            borderLeft: 1,
+            borderStyle: 'solid',
+          },
+          '.profile': {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            boxShadow: '-1px 3px 20px -11px rgba(66, 68, 90, 1);',
+            width: 300,
+            borderRadius: 5,
+          },
+          '.label': {
+            fontSize: 13,
+          },
+          '.quantity': {
+            fontSize: 16,
+            fontWeight: 700,
+          },
+          '.description': {},
         }}
       />
       <div className="profile">
