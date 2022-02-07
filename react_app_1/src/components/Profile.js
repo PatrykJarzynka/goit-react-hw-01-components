@@ -36,26 +36,12 @@ function Profile(props) {
             borderColor: 'rgb(227, 227, 227)',
             width: '100%',
             margin: 0,
-            backgroundColor: 'rgb(240, 240, 240)',
+             backgroundColor: 'rgb(247, 246, 242)',
             borderBottomRightRadius: 5,
             borderBottomLeftRadius: 5,
           },
           ul: {
             listStyle: 'none',
-          },
-          li: {
-            display: 'flex',
-            flexDirection: 'column',
-            flexGrow: 1,
-            paddingTop: 15,
-            paddingBottom: 15,
-          },
-          'li: nth-child(2)': {
-            border: 0,
-            borderRight: 1,
-            borderLeft: 1,
-            borderStyle: 'solid',
-            borderColor: 'rgb(227, 227, 227)',
           },
           '.profile': {
             display: 'flex',
@@ -66,6 +52,7 @@ function Profile(props) {
             borderRadius: 5,
             marginLeft: 'auto',
             marginRight: 'auto',
+            backgroundColor: 'white'
           },
           '.label': {
             fontSize: 13,
@@ -85,15 +72,47 @@ function Profile(props) {
         </div>
 
         <ul className="stats">
-          <li key={'follow'}>
+          <li
+            css={{
+              display: 'flex',
+              flexDirection: 'column',
+              flexGrow: 1,
+              paddingTop: 15,
+              paddingBottom: 15,
+            }}
+            key={'follow'}
+          >
             <span className="label">Followers</span>
             <span className="quantity">{props.stats.followers}</span>
           </li>
-          <li key={'view'}>
+          <li
+            key={'view'}
+            css={{
+              border: 0,
+              borderRight: 1,
+              borderLeft: 1,
+              borderStyle: 'solid',
+              borderColor: 'rgb(227, 227, 227)',
+              display: 'flex',
+              flexDirection: 'column',
+              flexGrow: 1,
+              paddingTop: 15,
+              paddingBottom: 15,
+            }}
+          >
             <span className="label">Views</span>
             <span className="quantity">{props.stats.views}</span>
           </li>
-          <li key={'like'}>
+          <li
+            css={{
+              display: 'flex',
+              flexDirection: 'column',
+              flexGrow: 1,
+              paddingTop: 15,
+              paddingBottom: 15,
+            }}
+            key={'like'}
+          >
             <span className="label">Likes</span>
             <span className="quantity">{props.stats.likes}</span>
           </li>
