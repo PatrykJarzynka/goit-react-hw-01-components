@@ -32,6 +32,12 @@ function Statistics(props) {
     </li>
   ));
 
+  if (!props.title) {
+    return (
+      <ul css={{ display: 'flex', justifyContent: 'center', padding: 0, margin: 0 }}>{view}</ul>
+    );
+  }
+
   return (
     <section
       css={{
@@ -41,6 +47,7 @@ function Statistics(props) {
         marginLeft: 'auto',
         marginRight: 'auto',
         marginTop: 20,
+        borderRadius: 100,
       }}
     >
       <h2
