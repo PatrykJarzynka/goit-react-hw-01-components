@@ -13,7 +13,7 @@ function FriendList(props) {
     />
   ));
 
-  return <ul className="friend-list">{view}</ul>;
+  return <ul css={{display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 0}}>{view}</ul>;
 }
 
 export default FriendList;
