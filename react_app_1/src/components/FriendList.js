@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import FriendListItem from './FriendListItem';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 function FriendList(props) {
   const friends = props.friends;
@@ -21,11 +21,10 @@ function FriendList(props) {
   );
 }
 
-FriendListItem.PropTypes = {
-  key: PropTypes.number.isRequired,
-  avatar: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool.isRequired,
+FriendListItem.propTypes = {
+  avatar: propTypes.string.isRequired,
+  name: propTypes.string.isRequired,
+  isOnline: propTypes.bool.isRequired,
 };
 
 export default FriendList;
