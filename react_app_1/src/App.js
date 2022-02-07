@@ -8,9 +8,8 @@ import TransactionHistory from './components/TransactionHistory';
 import user from './data/user.json';
 import data from './data/data.json';
 import friends from './data/friends.json';
-import transactions from "./data/transactions.json"
-
-
+import transactions from './data/transactions.json';
+import PropTypes from 'prop-types';
 
 function App() {
   return (
@@ -29,5 +28,26 @@ function App() {
     </div>
   );
 }
+
+Profile.PropTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired,
+};
+
+Statistics.PropTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.object.isRequired,
+};
+
+FriendList.PropTypes = {
+  friends: PropTypes.object.isRequired,
+};
+
+TransactionHistory.PropTypes = {
+  items: PropTypes.object.isRequired,
+};
 
 export default App;
