@@ -63,7 +63,11 @@ function Statistics(props) {
       >
         Upload stats
       </h2>
-      <ul css={{ display: 'flex', justifyContent: 'center', padding: 0, margin: 0 }}>{view}</ul>
+      <ul
+        css={{ display: 'flex', justifyContent: 'center', padding: 0, margin: 0, marginBottom: 10 }}
+      >
+        {view}
+      </ul>
     </section>
   );
 }
